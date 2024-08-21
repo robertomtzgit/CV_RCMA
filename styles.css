@@ -1,0 +1,335 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Container for centering */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    background-color: #333333;
+    color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #f1c40f;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.profile-pic img {
+    width: 450px;
+    height: 350px;
+    border: 5px solid #f1c40f;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.intro h1 {
+    font-size: 40px;
+    color: #f1c40f;
+}
+
+.intro h2 {
+    font-size: 30px;
+    color: #ecf0f1;
+}
+
+.intro p {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.intro button {
+    background-color: #f1c40f;
+    color: #333333;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* About Me Section */
+.about-me {
+    padding: 40px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.about-me h2 {
+    color: #f1c40f;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.about-me-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-me-info {
+    flex: 1;
+    max-width: 50%;
+    margin-right: 20px;
+}
+
+.about-me-photo {
+    flex: 1;
+    max-width: 50%;
+    text-align: right;
+}
+
+.about-me-photo img {
+    width: 100%;
+    max-width: 300px;
+    border: 5px solid #f1c40f;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+/* Other sections */
+.skills, .experience-education, .portfolio, .contact {
+    padding: 40px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: left;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.skills h2, .experience-education h2, .portfolio h2, .contact h2 {
+    color: #f1c40f;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.personal-info p {
+    margin: 10px 0;
+}
+
+/* Skills Section */
+.skills {
+    padding: 40px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.skill-circles {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skill {
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.skill svg {
+    width: 100px;
+    height: 100px;
+    transform: rotate(-90deg);
+    position: relative;
+}
+
+.skill circle {
+    fill: none;
+    stroke-width: 10;
+    stroke: #333;
+}
+
+.skill circle:nth-child(2) {
+    stroke: #f1c40f;
+    stroke-dasharray: 251.2;
+    stroke-dashoffset: calc(251.2 - (251.2 * var(--percentage)) / 100);
+    transition: stroke-dashoffset 0.3s ease;
+}
+
+.percentage-text {
+    fill: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    transform: rotate(90deg);
+    font-family: Arial, sans-serif;
+}
+
+.skill p {
+    margin-top: 10px;
+}
+
+/* Experience & Education Section */
+.experience, .education {
+    margin-bottom: 30px;
+}
+
+.experience h3, .education h3 {
+    color: #f1c40f;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Portfolio Section */
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.portfolio-items .item {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    background-color: #333333;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.portfolio-items .item img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    background-color: #333333;
+    border: 2px solid #f1c40f;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.contact form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact form button {
+    background-color: #f1c40f;
+    color: #333333;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #e2b007;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-pic img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .skills .skill {
+        text-align: left;
+    }
+
+    .contact form input, .contact form textarea {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro h1 {
+        font-size: 30px;
+    }
+
+    .intro h2 {
+        font-size: 24px;
+    }
+
+    .skills h2, .about-me h2, .experience-education h2, .portfolio h2, .contact h2 {
+        font-size: 28px;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-media h2 {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    .social-icons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
